@@ -1,0 +1,16 @@
+IN THE NAME OF ALLAH THE MOST MERCIFUL THE MOST BENEFICIALS2023-10-10	11:30:06	5e3bf07c-1576-46a4-8c66-bd05d69aa0e9	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Desktop\nodejs\lesson-8\Route\views\subdir\test.html'
+2023-10-10	13:00:06	dc0939b9-b26f-4bf6-af85-710305913cf6	Error: ENOENT: no such file or directory, stat 'C:\Users\user\Desktop\nodejs\lesson-8\routes\views\new-page.html'
+2023-10-10	16:26:59	7588df97-900d-4194-a3e8-86729c733fd8	SyntaxError: Unexpected token } in JSON at position 21
+2023-10-11	12:00:02	5e43d13b-9e27-43c8-a4e3-b2fa373d3c97	TypeError: res.sttus is not a function
+2023-10-11	12:00:09	7f33e4fd-9e61-43b1-9705-f89fb408d63a	TypeError: res.sttus is not a function
+2023-10-11	12:47:14	e80361fc-52aa-457a-b794-acf2116d4c94	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	12:50:16	3bc77f92-905c-4a31-822c-0b2dfccef803	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	12:50:32	cc68cc5c-852d-4d1a-b550-86322427fbc1	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	12:51:32	7fc7798c-5810-4fbf-ad8d-8e12e8b79e0f	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	12:56:47	97afe479-99b6-4812-a030-5ba3d0d791a4	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	12:56:48	88ac53f7-1d01-48aa-8bb7-39cf9657b5a4	TypeError: Cannot read properties of undefined (reading 'id')
+2023-10-11	16:13:15	9b748ec3-e421-4cf2-9439-334ee858e050	SyntaxError: Unexpected token u in JSON at position 1
+2023-10-11	16:14:16	3058e5f1-4fa2-497e-bde5-761d25d82be0	SyntaxError: Unexpected token u in JSON at position 1
+2023-10-11	16:14:23	212b503b-d5be-489d-aef1-161ecd00e231	SyntaxError: Unexpected token u in JSON at position 1
+2023-10-11	16:16:31	bfe5c755-5f57-40ef-bd7e-dc6f56f53faf	SyntaxError: Unexpected token ' in JSON at position 9
+2023-10-11	16:17:23	fceca760-f629-4b53-a540-d5ebd88f9bcd	SyntaxError: Unexpected end of JSON input
