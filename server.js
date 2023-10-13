@@ -4,16 +4,24 @@ const path = require('path');
 const cors = require('cors')
 const {logger} = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler')
-const corsOptions = require('./config/corsOptions')
+const corsOptions = require('./config/corsOptions');
+const verifyJWT =require('./middleware/verifyJWT')
+const cookieParser = require('cookie-parser')
 const PORT = process.env.PORT || 3400;
 // const {router} = require('./routes/subdir')
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
+app.use(cookieParser())
 
 //Static Routes
 
-app.use('/', express.static(path.join(__dirname, "public")));         
+app.use('/', express.static(path.join(__dirname, "public")));  
+app.use(logger)
+ 
+
+
+app.use(cors(corsOptions))       
 
 //Apply static 
 
@@ -21,13 +29,13 @@ app.use('/', express.static(path.join(__dirname, "public")));
 app.use('/', require('./routes/root'))
 app.use('/register', require('./routes/register'))
 app.use('/auth', require('./routes/auth'))
+app.use('/refresh', require('./routes/refresh'))
+
+
+app.use(verifyJWT)
 app.use('/employees', require('./routes/api/employees'))
 
-app.use(logger)
- 
 
-
-app.use(cors(corsOptions))
 
 app.get('/old-page(.html)?', (req, res) => {
     res.redirect(301, "new-page.html")
